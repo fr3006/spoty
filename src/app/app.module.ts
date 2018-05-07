@@ -9,6 +9,8 @@ import { SearchComponent } from './components/search/search.component';
 import { app_routing } from './components/app.routes';
 
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+
 //services
 import { SpotifyService } from './services/spotify.service';
 
@@ -25,7 +27,8 @@ import { SpotifyService } from './services/spotify.service';
   imports: [
     BrowserModule,
     app_routing,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [
     SpotifyService
