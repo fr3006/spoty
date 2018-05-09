@@ -13,6 +13,8 @@ import { FormsModule } from '@angular/forms';
 
 //services
 import { SpotifyService } from './services/spotify.service';
+import { SinfotoPipe } from './pipes/sinfoto.pipe';
+import { ArtistComponent } from './components/artist/artist.component';
 
 
 
@@ -22,7 +24,9 @@ import { SpotifyService } from './services/spotify.service';
     AppComponent,
     HomeComponent,
     NavbarComponent,
-    SearchComponent
+    SearchComponent,
+    SinfotoPipe,
+    ArtistComponent
   ],
   imports: [
     BrowserModule,
