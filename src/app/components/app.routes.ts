@@ -11,9 +11,9 @@ const routes: Routes = [
     { path: 'home', component: HomeComponent },
     { path: 'search', component: SearchComponent },
     { path: 'shared', component: NavbarComponent },
-    { path: 'artist/:id', component: ArtistComponent },
+    { path: 'artist/:id_artistya', component: ArtistComponent },
     { path: '', pathMatch: 'full', redirectTo: 'home' },
-   // { path: '**', component: PageNotFoundComponent },
+    { path: '**', pathMatch: 'full', redirectTo: 'home' }
 
     //{ path: 'path/:routeParam', component: MyComponent },
     //{ path: 'staticPath', component: ... },

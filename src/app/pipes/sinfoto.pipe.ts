@@ -6,7 +6,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class SinfotoPipe implements PipeTransform {
 
   transform(imagen: any): any {
-   let noimage = 'assests/img/noimage.png';
+   let noimage = 'assets/img/noimage.png';
 
     if ( !imagen) {
       return noimage ;

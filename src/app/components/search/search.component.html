@@ -10,7 +10,7 @@
         <h1 class="text-capitalize">{{termino}}</h1>
         <hr>
         <div class="row">
-            <div *ngFor="let artista of _spotify.artistas" class="col-md-3 text-center puntero" [routerLink]="['/artist','artista.id']">
+            <div *ngFor="let artista of _spotify.artistas" class="col-md-3 text-center puntero" [routerLink]="['/artist',artista.id]">
 
                 <img [src]="artista.images | sinfoto" class="tumbnail">
                 <p>
