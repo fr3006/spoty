@@ -13,11 +13,11 @@ import { FormsModule } from '@angular/forms';
 
 //services
 import { SpotifyService } from './services/spotify.service';
-import { SinfotoPipe } from './pipes/sinfoto.pipe';
 import { ArtistComponent } from './components/artist/artist.component';
 
-
-
+//pipes
+import { SinfotoPipe } from './pipes/sinfoto.pipe';
+import { DomseguroPipe } from './pipes/domseguro.pipe';
 
 @NgModule({
   declarations: [
@@ -26,7 +26,8 @@ import { ArtistComponent } from './components/artist/artist.component';
     NavbarComponent,
     SearchComponent,
     SinfotoPipe,
-    ArtistComponent
+    ArtistComponent,
+    DomseguroPipe
   ],
   imports: [
     BrowserModule,

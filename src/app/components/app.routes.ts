@@ -11,7 +11,7 @@ const routes: Routes = [
     { path: 'home', component: HomeComponent },
     { path: 'search', component: SearchComponent },
     { path: 'shared', component: NavbarComponent },
-    { path: 'artist/:id_artistya', component: ArtistComponent },
+    { path: 'artist/:id', component: ArtistComponent },
     { path: '', pathMatch: 'full', redirectTo: 'home' },
     { path: '**', pathMatch: 'full', redirectTo: 'home' }
 
@@ -21,6 +21,5 @@ const routes: Routes = [
     //{ path: 'oldPath', redirectTo: '/staticPath' },
     //{ path: ..., component: ..., data: { message: 'Custom' }
 ];
-
 
 export const app_routing = RouterModule.forRoot(routes, { useHash : true});
